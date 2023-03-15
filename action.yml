@@ -68,7 +68,7 @@ runs:
           export COMMIT_TAG=${GITHUB_REF:10}
         else
           if [ -z ${IMAGE_TAG} ]; then
-            export COMMIT_TAG=latest
+            export COMMIT_TAG=master
           else
             export COMMIT_TAG=${IMAGE_TAG}
           fi
